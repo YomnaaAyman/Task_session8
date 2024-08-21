@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 10px;
+  font-size: 17px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  margin: auto;
+}
+.header-container__navbar {
+  margin: 10px;
+  margin-right: 0;
+}
+button {
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+button a {
+  color: rgb(33, 32, 32);
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #c3c3c3;
+}
+.body-container__image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.body-container__image img {
+  max-width: 100%;
+  height: auto;
+}
+.image__text {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.body-container__projects,
+.body-container__about-people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.project-container {
+  position: relative;
+  /*we have to make position relative to the whole container to be able to control the text */
+  flex: 1;
+  margin: 10px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.project-container__text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+  color: #fff;
+  font-size: 15px;
+  background-color: black;
+  background-size: contain;
+}
+
+.body-container__title p {
+  font-size: 14px;
+}
+
+.job {
+  padding: 10px;
+  color: grey;
+  font-size: 12px;
+}
+.job_description {
+  font-size: 12px;
+  padding: 5px;
+}
+.people-container button {
+  font-size: 14px;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.people-container button:hover {
+  background-color: #c3c3c3;
+}
+
+.contact-form input {
+  display: block;
+  padding: 5px;
+  width: 80%;
+  border-width: 30%;
+}
+.contact-form input::placeholder {
+  font-size: 13px;
+  padding: 5px;
+}
+[type="submit"] {
+  color: #ffffff;
+  background-color: black;
+  font-size: 12px;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+}
